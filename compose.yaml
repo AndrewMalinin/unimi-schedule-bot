@@ -1,6 +1,9 @@
 services:
   bot:
-    build: .
+    build:
+      context: .
+      # На OpenWrt/FriendlyWrt bridge docker0 часто без veth — pip в RUN ломается.
+      network: host
     container_name: unimi-bot
     restart: unless-stopped
     env_file: .env
