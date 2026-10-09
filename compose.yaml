@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    container_name: unimi-bot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    # На шлюзе с VLESS/split-tunnel контейнер наследует маршруты хоста.
+    network_mode: host

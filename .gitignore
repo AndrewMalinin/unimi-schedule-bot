@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+unimi.ics
+*.ics
+.idea/
+.vscode/
+data/
+bot_*.log
+bot_run.log
+bot_stdout.log
+bot_stderr.log
+AGENTS.md
