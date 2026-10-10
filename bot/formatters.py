@@ -116,7 +116,7 @@ def format_week(
         by_day[lesson.day].append(lesson)
 
     if intro is None:
-        intro = t("schedule.week_intro") + "\n"
+        intro = t("schedule.week_intro")
     parts = [
         intro,
         t(
@@ -124,6 +124,7 @@ def format_week(
             start=_fmt_date(start),
             end=_fmt_date(end),
         ),
+        '\n',
     ]
 
     if not lessons:
