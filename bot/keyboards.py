@@ -70,7 +70,6 @@ def reply_keyboard(*, subscribed: bool) -> dict:
             [{"text": BTN_REFRESH}, {"text": sub_btn}],
         ],
         "resize_keyboard": True,
-        "is_persistent": True,
     }
 
 
@@ -82,7 +81,6 @@ def electives_menu_keyboard() -> dict:
             [{"text": BTN_EL_BACK}],
         ],
         "resize_keyboard": True,
-        "is_persistent": True,
     }
 
 
