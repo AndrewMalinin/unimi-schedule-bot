@@ -9,5 +9,7 @@ services:
     env_file: .env
     volumes:
       - ./data:/app/data
+      # Код с хоста — правки .py без пересборки образа.
+      - ./bot:/app/bot
     # На шлюзе с VLESS/split-tunnel контейнер наследует маршруты хоста.
     network_mode: host
